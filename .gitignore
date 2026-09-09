@@ -1,0 +1,21 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
