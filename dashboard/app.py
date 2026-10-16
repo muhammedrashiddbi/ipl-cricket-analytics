@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-
+from pathlib import Path
 
 # ============================================================
 # THEME COLOURS  (black / white / red)
@@ -31,7 +31,7 @@ st.set_page_config(
 # DATABASE
 # ============================================================
 
-DB = r"C:\Documents\ipl-cricket-analytics\data\raw\ipl.db"
+DB = Path(__file__).resolve().parents[1] / "data" / "raw" / "ipl.db"
 
 
 @st.cache_data
